@@ -17,3 +17,41 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@layer components {
+  .row {
+    @apply flex flex-row justify-center items-center space-x-3 px-2
+  }
+  .row-start {
+    @apply flex flex-row justify-start items-center space-x-3 px-2
+  }
+  .row-end {
+    @apply flex flex-row justify-end items-center space-x-3 px-2
+  }
+  .col {
+    @apply flex flex-col py-3
+  }
+  .half {
+    @apply w-1/2
+  }
+  .full {
+    @apply w-full
+  }
+
+  h1{
+    @apply text-7xl
+  }
+
+  h2 {
+    @apply text-4xl
+  }
+
+  h3{
+    @apply text-xl
+  }
+
+  h4{
+    @apply text-sm
+  }
+
+}
