@@ -6,7 +6,6 @@ import whiteEgg from "./assets/whiteegg.jpg";
 import pinkEgg from "./assets/pinkEgg.jpg";
 import LaunchIl from "./assets/launch-il.svg";
 
-
 export default function Home() {
   return (
     <div className="col pt-4 px-7 md:pt-7 md:px-9 bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400 min-h-screen min-w-full">
@@ -330,9 +329,17 @@ export default function Home() {
           </svg>
         </div>
         <div className="col justify-start items-start w-full md:w-1/2 space-y-3 md:space-y-6 text-white">
-          <h4 className="uppercase md:text-xl bold text-gray-200">Learn from us</h4>
-          <h3 className="text-white md:text-5xl bold">How To Sell Your Fist NFTs</h3>
-          <p className="md:text-lg ">Set up an Ethereum Wallet.The first step in your NFT journey is create a digital wallet where {"you'll"} securely store yuor crypto currency that is used to buy, sell and create NFTs. </p>
+          <h4 className="uppercase md:text-xl bold text-gray-200">
+            Learn from us
+          </h4>
+          <h3 className="text-white md:text-5xl bold">
+            How To Sell Your Fist NFTs
+          </h3>
+          <p className="md:text-lg ">
+            Set up an Ethereum Wallet.The first step in your NFT journey is
+            create a digital wallet where {"you'll"} securely store yuor crypto
+            currency that is used to buy, sell and create NFTs.{" "}
+          </p>
           {/* btn */}
           <div className="row px-0">
             <div className="btn rounded-full bg-purple-700 hover:bg-purple-900  shadow-lg font-semibold text-sm">
@@ -343,7 +350,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-
+      </div>
+      {/* other review */}
+      <div className="row">
+        {/* card */}
+        <div className="col">
+          <div className="row"></div>
+          <div className="row"></div>
+        </div>
       </div>
     </div>
   );
