@@ -40,6 +40,9 @@ a {
   .center {
     @apply justify-center items-center
   }
+  .btn {
+    @apply px-4 py-2 rounded-xl cursor-pointer flex flex-row justify-center items-center
+  }
 
   h1{
     @apply text-7xl
