@@ -43,6 +43,9 @@ a {
   .btn {
     @apply px-4 py-2 rounded-xl cursor-pointer flex flex-row justify-center items-center
   }
+  .bold {
+    @apply font-bold
+  }
 
   h1{
     @apply text-7xl
@@ -53,7 +56,7 @@ a {
   }
 
   h3{
-    @apply text-xl
+    @apply text-2xl
   }
 
   h4{
