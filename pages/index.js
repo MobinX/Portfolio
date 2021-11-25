@@ -6,9 +6,6 @@ import whiteEgg from "./assets/whiteegg.jpg";
 import pinkEgg from "./assets/pinkEgg.jpg";
 import LaunchIl from "./assets/launch-il.svg";
 
-export const config ={
-  unstable_runtime:false,
-} 
 
 export default function Home() {
   return (
