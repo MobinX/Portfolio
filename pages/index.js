@@ -4,11 +4,13 @@ import headerImg from "./assets/header-img.jpg";
 import abstractWave from "./assets/abstractWave.jpg";
 import whiteEgg from "./assets/whiteegg.jpg";
 import pinkEgg from "./assets/pinkEgg.jpg";
-import LaunchIl from "./assets/launch-il.svg";
+
+import { Avatar, name } from "react-lorem-ipsum";
 
 export default function Home() {
   return (
-    <div className="col pt-4 px-7 md:pt-7 md:px-9 bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400 min-h-screen min-w-full">
+    <div className="col flex-wrap min-h-screen min-w-full p-0">
+    <div className="col pt-4 px-7 md:pt-7 md:px-9 bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400 pb-14">
       {/* navbar */}
       <div className="row justify-between text-white">
         {/* icon container */}
@@ -94,7 +96,7 @@ export default function Home() {
         {/* cards */}
         <div className="row space-y-7 space-x-0 md:space-x-7 md:space-y-0 flex-wrap md:flex-nowrap">
           {/* card1 */}
-          <div className="col space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg p-4 px-6 ">
+          <div className="col shadow-xl space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg p-4 px-6 ">
             {/* image */}
             <div className="col  rounded-xl">
               <Image
@@ -121,7 +123,7 @@ export default function Home() {
             </div>
           </div>
           {/* card-2 */}
-          <div className="col space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg  p-4 px-7 ">
+          <div className="col shadow-xl space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg  p-4 px-7 ">
             {/* image */}
             <div className="col  rounded-xl">
               <Image className="rounded-lg" src={pinkEgg} alt="abstract wave" />
@@ -144,7 +146,7 @@ export default function Home() {
             </div>
           </div>
           {/* card3 */}
-          <div className="col space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg p-4 px-6 ">
+          <div className="col shadow-xl space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg p-4 px-6 ">
             {/* image */}
             <div className="col  rounded-xl">
               <Image
@@ -341,7 +343,7 @@ export default function Home() {
             currency that is used to buy, sell and create NFTs.{" "}
           </p>
           {/* btn */}
-          <div className="row px-0">
+          <div className="row px-0 mt-5">
             <div className="btn rounded-full bg-purple-700 hover:bg-purple-900  shadow-lg font-semibold text-sm">
               Learn Now
             </div>
@@ -351,13 +353,92 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* other review */}
-      <div className="row">
-        {/* card */}
-        <div className="col">
-          <div className="row"></div>
-          <div className="row"></div>
+      {/* other members */}
+      <div className="col space-y-2 md:space-y-6 pb-9">
+        <div className="row  bold text-white">
+          <h5>Our Proud Members</h5>
         </div>
+        <div className="row flex-wrap md:flex-nowrap space-x-3  md:space-x-6 md:space-y-0">
+          {/* card 5*/}
+          <div className="col mt-6 md:mt-0  text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
+            <div className="col space-y-1 center">
+              <Avatar gender="male" className="w-8 h-8 rounded-full" />
+              <p className="bold text-sm">{name("male")}</p>
+              <div className="row p-0 space-x-1">
+                <p className="text-xs bold">110,909</p>
+                <p className="text-gray-100 bold text-xs">Assets</p>{" "}
+              </div>
+            </div>
+            <div className="row justify-between"></div>
+          </div>
+          {/* card 4*/}
+          <div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
+            <div className="col space-y-1 center">
+              <Avatar gender="male" className="w-8 h-8 rounded-full" />
+              <p className="bold text-sm">{name("male")}</p>
+              <div className="row p-0 space-x-1">
+                <p className="text-xs bold">110,909</p>
+                <p className="text-gray-100 bold text-xs">Assets</p>{" "}
+              </div>
+            </div>
+            <div className="row"></div>
+          </div>
+          {/* card 3*/}
+          <div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
+            <div className="col space-y-1 center">
+              <Avatar gender="male" className="w-8 h-8 rounded-full" />
+              <p className="bold text-sm">{name("male")}</p>
+              <div className="row p-0 space-x-1">
+                <p className="text-xs bold">110,909</p>
+                <p className="text-gray-100 bold text-xs">Assets</p>{" "}
+              </div>
+            </div>
+            <div className="row"></div>
+          </div>
+          {/* card 2*/}
+          <div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
+            <div className="col space-y-1 center">
+              <Avatar gender="male" className="w-8 h-8 rounded-full" />
+              <p className="bold text-sm">{name("male")}</p>
+              <div className="row p-0 space-x-1">
+                <p className="text-xs bold">110,909</p>
+                <p className="text-gray-100 bold text-xs">Assets</p>{" "}
+              </div>
+            </div>
+            <div className="row"></div>
+          </div>
+          {/* card 1 */}
+          <div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
+            <div className="col space-y-1 center">
+              <Avatar gender="male" className="w-8 h-8 rounded-full" />
+              <p className="bold text-sm">{name("male")}</p>
+              <div className="row p-0 space-x-1">
+                <p className="text-xs bold">110,909</p>
+                <p className="text-gray-100 bold text-xs">Assets</p>{" "}
+              </div>
+            </div>
+            <div className="row"></div>
+          </div>
+        
+        </div>
+      </div>
+     
+    </div>
+     {/* footer */}
+     <div className="row flex-wrap md:flex-nowrap  justify-start bg-purple-900 w-full text-white p-7 pl-9">
+        <div className='col space-y-2 w-full ml-4'>
+          <h5 className="bold">About Us</h5>
+          <p>Why we ?</p>
+          <p>Our Mission</p>
+          <p>Be a Partner</p>
+        </div>
+        <div className='col space-y-2 w-full ml-4'>
+          <h5 className="bold">Contact Us</h5>
+          <p>(+880) 123456789</p>
+          <p>mobin0219@gmail.com</p>
+          <p>Khilgaon,Dhaka</p>
+        </div>
+
       </div>
     </div>
   );
