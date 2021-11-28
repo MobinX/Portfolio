@@ -6,8 +6,16 @@ import whiteEgg from "./assets/whiteegg.jpg";
 import pinkEgg from "./assets/pinkEgg.jpg";
 
 import { Avatar, name } from "react-lorem-ipsum";
+import { Animate } from "../components/Animate";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(()=>{
+    AOS.init();
+})
   return (
     <div className="col flex-wrap min-h-screen min-w-full p-0">
     <div className="col pt-4 px-7 md:pt-7 md:px-9 bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400 pb-14">
@@ -31,72 +39,72 @@ export default function Home() {
       <div className="row flex-row-reverse  flex-wrap md:flex-nowrap  space-y-1 py-7">
         {/* header img  */}
         <div className="col items-start order-last  w-full md:w-1/2  center">
-          <div className="col w-11/12 md:w-9/12 center">
+          <Animate.div className="col w-11/12 md:w-9/12 center">
             <Image
               src={headerImg}
               alt="header img"
               className="rounded shadow rounded-t-3xl rounded-b-3xl"
             />
-          </div>
+          </Animate.div>
         </div>
 
         {/* header info */}
         <div className="col w-full  md:w-1/2 justify-start items-start  py-4  text-white">
-          <h2 className="md:text-5xl font-bold">
+          <Animate.h2 className="md:text-5xl font-bold">
             Hallucination Quest Album #2021
-          </h2>
-          <p className="text-sm my-5">@mobinchowdhury</p>
+          </Animate.h2>
+          <Animate.p className="text-sm my-5">@mobinchowdhury</Animate.p>
 
           <div className="row w-4/5 hidden md:flex justify-between">
             <div className="col space-y-2">
-              <p>Current Bids</p>
-              <h3 className="font-semibold">3.00 ETH</h3>
-              <p className="italic">$9000,00</p>
+              <Animate.p>Current Bids</Animate.p>
+              <Animate.h3 className="font-semibold">3.00 ETH</Animate.h3>
+              <Animate.p className="italic">$9000,00</Animate.p>
             </div>
             {/* divider */}
-            <div className="h-12 w-1 bg-white py-2"></div>
+            <Animate.div className="h-12 w-1 bg-white py-2"></Animate.div>
             <div className="col space-y-2 ">
-              <p>Auction end in</p>
+              <Animate.p>Auction end in</Animate.p>
               {/* time row */}
               <div className="flex flex-row space-x-3 justify-between">
                 {/* time cols */}
                 <div className="col space-y-1 center">
-                  <h3 className="font-semibold">19</h3>
-                  <p className="italic">Hours</p>
+                  <Animate.h3 className="font-semibold">19</Animate.h3>
+                  <Animate.p className="italic">Hours</Animate.p>
                 </div>
                 <div className="col space-y-1 center">
-                  <h3 className="font-semibold">38</h3>
-                  <p className="italic">Minutes</p>
+                  <Animate.h3 className="font-semibold">38</Animate.h3>
+                  <Animate.p className="italic">Minutes</Animate.p>
                 </div>
                 <div className="col space-y-1 center">
-                  <h3 className="font-semibold">9</h3>
-                  <p className="italic">Seconds</p>
+                  <Animate.h3 className="font-semibold">9</Animate.h3>
+                  <Animate.p className="italic">Seconds</Animate.p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="row px-0">
+          <Animate.div className="row px-0">
             <div className="btn rounded-full bg-purple-600 hover:bg-purple-900  shadow-lg font-semibold text-sm">
               Place a Bid
             </div>
             <div className="btn rounded-full bg-transparent hover:bg-purple-500  shadow-lg font-semibold text-sm">
               View Artwork
             </div>
-          </div>
+          </Animate.div>
         </div>
       </div>
 
       {/* features */}
-      <div className="col space-y-5 text-white pr-4">
+      <div className="col space-y-5 text-white pr-4 mt-6">
         {/* header  */}
-        <div className="row justify-between">
+        <Animate.div className="row justify-between">
           <h5 className="font-semibold">Treanding</h5>
           <p className="text-sm">View all acution</p>
-        </div>
+        </Animate.div>
         {/* cards */}
         <div className="row space-y-7 space-x-0 md:space-x-7 md:space-y-0 flex-wrap md:flex-nowrap">
           {/* card1 */}
-          <div className="col shadow-xl space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg p-4 px-6 ">
+          <Animate.div className="col shadow-xl space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg p-4 px-6 ">
             {/* image */}
             <div className="col  rounded-xl">
               <Image
@@ -121,9 +129,9 @@ export default function Home() {
                 favourite this
               </p>
             </div>
-          </div>
+          </Animate.div>
           {/* card-2 */}
-          <div className="col shadow-xl space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg  p-4 px-7 ">
+          <Animate.div className="col shadow-xl space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg  p-4 px-7 ">
             {/* image */}
             <div className="col  rounded-xl">
               <Image className="rounded-lg" src={pinkEgg} alt="abstract wave" />
@@ -144,9 +152,9 @@ export default function Home() {
                 favourite this
               </p>
             </div>
-          </div>
+          </Animate.div>
           {/* card3 */}
-          <div className="col shadow-xl space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg p-4 px-6 ">
+          <Animate.div className="col shadow-xl space-y-5 pb-7 w-full md:w-1/3 bg-purple-400 rounded-lg p-4 px-6 ">
             {/* image */}
             <div className="col  rounded-xl">
               <Image
@@ -171,13 +179,13 @@ export default function Home() {
                 favourite this
               </p>
             </div>
-          </div>
+          </Animate.div>
         </div>
       </div>
 
       {/* insights */}
       <div className="row space-x-0 space-y-6 md:space-x-24 flex-wrap md:flex-nowrap px-4 py-16">
-        <div className="col w-full md:w-1/2 p-5 center">
+        <Animate.div className="col w-full md:w-1/2 p-5 center">
           {/* illustration */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -329,38 +337,38 @@ export default function Home() {
               fill="#cacaca"
             />
           </svg>
-        </div>
+        </Animate.div>
         <div className="col justify-start items-start w-full md:w-1/2 space-y-3 md:space-y-6 text-white">
-          <h4 className="uppercase md:text-xl bold text-gray-200">
+          <Animate.h4 className="uppercase md:text-xl bold text-gray-200">
             Learn from us
-          </h4>
-          <h3 className="text-white md:text-5xl bold">
+          </Animate.h4>
+          <Animate.h3 className="text-white md:text-5xl bold">
             How To Sell Your Fist NFTs
-          </h3>
-          <p className="md:text-lg ">
+          </Animate.h3>
+          <Animate.p className="md:text-lg ">
             Set up an Ethereum Wallet.The first step in your NFT journey is
             create a digital wallet where {"you'll"} securely store yuor crypto
             currency that is used to buy, sell and create NFTs.{" "}
-          </p>
+          </Animate.p>
           {/* btn */}
-          <div className="row px-0 mt-5">
+          <Animate.div className="row px-0 mt-5">
             <div className="btn rounded-full bg-purple-700 hover:bg-purple-900  shadow-lg font-semibold text-sm">
               Learn Now
             </div>
             <div className="btn rounded-full bg-transparent hover:bg-purple-500  shadow-lg font-semibold text-sm">
               Discover More
             </div>
-          </div>
+          </Animate.div>
         </div>
       </div>
       {/* other members */}
       <div className="col space-y-2 md:space-y-6 pb-9">
         <div className="row  bold text-white">
-          <h5>Our Proud Members</h5>
+          <Animate.h5>Our Proud Members</Animate.h5>
         </div>
         <div className="row flex-wrap md:flex-nowrap space-x-3  md:space-x-6 md:space-y-0">
           {/* card 5*/}
-          <div className="col mt-6 md:mt-0  text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
+          <Animate.div className="col mt-6 md:mt-0  text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
             <div className="col space-y-1 center">
               <Avatar gender="male" className="w-8 h-8 rounded-full" />
               <p className="bold text-sm">{name("male")}</p>
@@ -370,9 +378,9 @@ export default function Home() {
               </div>
             </div>
             <div className="row justify-between"></div>
-          </div>
+          </Animate.div>
           {/* card 4*/}
-          <div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
+          <Animate.div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
             <div className="col space-y-1 center">
               <Avatar gender="male" className="w-8 h-8 rounded-full" />
               <p className="bold text-sm">{name("male")}</p>
@@ -382,9 +390,9 @@ export default function Home() {
               </div>
             </div>
             <div className="row"></div>
-          </div>
+          </Animate.div>
           {/* card 3*/}
-          <div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
+          <Animate.div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
             <div className="col space-y-1 center">
               <Avatar gender="male" className="w-8 h-8 rounded-full" />
               <p className="bold text-sm">{name("male")}</p>
@@ -394,9 +402,9 @@ export default function Home() {
               </div>
             </div>
             <div className="row"></div>
-          </div>
+          </Animate.div>
           {/* card 2*/}
-          <div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
+          <Animate.div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
             <div className="col space-y-1 center">
               <Avatar gender="male" className="w-8 h-8 rounded-full" />
               <p className="bold text-sm">{name("male")}</p>
@@ -406,9 +414,9 @@ export default function Home() {
               </div>
             </div>
             <div className="row"></div>
-          </div>
+          </Animate.div>
           {/* card 1 */}
-          <div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
+          <Animate.div className="col mt-6 text-white p-6 bg-purple-500 shadow-xl rounded-3xl">
             <div className="col space-y-1 center">
               <Avatar gender="male" className="w-8 h-8 rounded-full" />
               <p className="bold text-sm">{name("male")}</p>
@@ -418,7 +426,7 @@ export default function Home() {
               </div>
             </div>
             <div className="row"></div>
-          </div>
+          </Animate.div>
         
         </div>
       </div>
